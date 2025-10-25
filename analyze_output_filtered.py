@@ -1,7 +1,7 @@
 from collections import Counter
 
 word_cnt = Counter()
-with open("combined_output.txt", "r", encoding="utf-8") as f:
+with open("output_wordcount_stopwords/part-00000", "r", encoding="utf-8") as f:
     for ln in f:
         sb = ln.strip().split("\t")
         if len(sb) != 2:
